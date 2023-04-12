@@ -629,7 +629,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 124
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 2
@@ -1021,6 +1021,71 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &522933862
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3162867022280216862, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: m_Name
+      value: CCSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208528211867408455, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: Database
+      value: 
+      objectReference: {fileID: 11400000, guid: 547b561f8c4b0b648acd3390334cae2b, type: 2}
+    - target: {fileID: 3208528211867408455, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: TrackedForPos
+      value: 
+      objectReference: {fileID: 983224445}
+    - target: {fileID: 4954665676858572601, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954665676858572601, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954665676858572601, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954665676858572601, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954665676858572601, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954665676858572601, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954665676858572601, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954665676858572601, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954665676858572601, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954665676858572601, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954665676858572601, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 358b0eb736b06da40986b005d9aa1146, type: 3}
 --- !u!1 &686213735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1962,6 +2027,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &983224445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8489952446011086177, guid: c622e5b90376f0a4f815a11f9985af8a, type: 3}
+  m_PrefabInstance: {fileID: 360896160}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1020635320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2993,6 +3063,62 @@ Transform:
   - {fileID: 2028429123}
   m_Father: {fileID: 500687203}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1486297945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1486297947}
+  - component: {fileID: 1486297946}
+  m_Layer: 0
+  m_Name: Cave Audio Reverb Zone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!167 &1486297946
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486297945}
+  m_Enabled: 1
+  m_MinDistance: 3
+  m_MaxDistance: 4
+  m_ReverbPreset: 9
+  m_Room: -1000
+  m_RoomHF: 0
+  m_DecayTime: 2.91
+  m_DecayHFRatio: 1.3
+  m_Reflections: -602
+  m_ReflectionsDelay: 0.015
+  m_Reverb: -302
+  m_ReverbDelay: 0.022
+  m_HFReference: 5000
+  m_Diffusion: 100
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
+--- !u!4 &1486297947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486297945}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.61, y: 1.34, z: 18.376226}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1618400911
 GameObject:
@@ -4443,6 +4569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2124602303}
   - component: {fileID: 2124602302}
+  - component: {fileID: 2124602304}
   m_Layer: 0
   m_Name: Waterfall Audio
   m_TagString: Untagged
@@ -4570,3 +4697,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2124602304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124602301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72071924f6236c14f87c58f0f7986ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanvasPrefab: {fileID: 8870750303014381627, guid: 3af81b2bb22b60348b47e8d0605411fe, type: 3}
+  AlwaysTracked: 1
+  MaxDistance: 15
+  Scale: 1
+  DynamicScale: 0
+  RootOffset: {x: 0, y: 1, z: 0}
